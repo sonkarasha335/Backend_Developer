@@ -29,7 +29,6 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 				session.setAttribute("message", "Invalid Details");
 			}
 		} catch (ClassNotFoundException | SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		response.sendRedirect("AdminPage.jsp");
